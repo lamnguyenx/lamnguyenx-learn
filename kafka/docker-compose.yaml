@@ -36,14 +36,3 @@ services:
       KAFKA_ALLOW_EVERYONE_IF_NO_ACL_FOUND: "true"
     depends_on:
       - zoo1
-
-  lenses:
-    image: lensesio/box
-    environment:
-      - ADV_HOST=127.0.0.1
-      - EULA="https://licenses.lenses.io/download/lensesdl?id=49b44a44-d304-11ee-bf14-42010af01003"
-    ports:
-      - "3030:3030"
-      - "9092:9092"
-
-
